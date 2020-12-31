@@ -1,4 +1,5 @@
 ![CI](https://github.com/HighlandsMMO/Highlands-Development/workflows/CI/badge.svg)
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/397dcb515adf4db0969d11067e65777d)](https://www.codacy.com/gh/HighlandsMMO/Highlands-Development/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=HighlandsMMO/Highlands-Development&amp;utm_campaign=Badge_Grade)
 
 # Highlands Development - WIP
 
