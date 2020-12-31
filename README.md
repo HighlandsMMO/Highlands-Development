@@ -2,6 +2,8 @@
 
 # Highlands Development - WIP
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/9921d037323f4cbc9d61199f307f3030)](https://app.codacy.com/gh/HighlandsMMO/Highlands-Development?utm_source=github.com&utm_medium=referral&utm_content=HighlandsMMO/Highlands-Development&utm_campaign=Badge_Grade_Settings)
+
 ### Run on the fly
 
 Run `./gradlew run` on linux and `gradlew run` on windows.
