@@ -1,5 +1,8 @@
 package highlands.highlandscore;
 
+
+import kr.entree.spigradle.annotations.SpigotPlugin;
+
 import highlands.highlandscore.api.HighlandsCoreApi;
 import highlands.highlandscore.infrastructure.HighlandsCoreDB;
 import highlands.highlandscore.settings.Settings;
@@ -10,6 +13,7 @@ import org.bukkit.plugin.java.JavaPlugin;
 import java.sql.SQLException;
 import java.util.logging.Level;
 
+@SpigotPlugin
 public class HighlandsCore extends JavaPlugin {
     //Settings
     private Settings settings;
