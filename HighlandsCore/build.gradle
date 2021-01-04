@@ -16,3 +16,9 @@ version '1.0-SNAPSHOT'
 dependencies {
     compileOnly spigot('1.16.4')
 }
+
+spigot {
+    debug {
+        buildVersion = "1.16.4"
+    }
+}
