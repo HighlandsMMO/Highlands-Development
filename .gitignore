@@ -2,4 +2,7 @@
 HighlandsCore/.run
 HighlandsCore/target
 HighlandsCore/debug
-HighlandsCore/gradle
+HighlandsCore/gradle/caches
+HighlandsCore/gradle/native
+HighlandsCore/gradle/daemon
+HighlandsCore/gradle/wrapper

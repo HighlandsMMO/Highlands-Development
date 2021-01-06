@@ -4,10 +4,10 @@ package highlands.highlandscore;
 import kr.entree.spigradle.annotations.SpigotPlugin;
 
 import highlands.highlandscore.api.HighlandsCoreApi;
+import highlands.highlandscore.commands.HighlandsCommandHandler;
 import highlands.highlandscore.infrastructure.HighlandsCoreDB;
 import highlands.highlandscore.settings.Settings;
 import highlands.highlandscore.utilities.AdvancedLogger;
-import org.bukkit.plugin.SimpleServicesManager;
 import org.bukkit.plugin.java.JavaPlugin;
 
 import java.sql.SQLException;
@@ -59,6 +59,9 @@ public class HighlandsCore extends JavaPlugin {
 
         //Api
         highlandsCoreApi = new HighlandsCoreApi(this);
+
+        //Command
+        registerCommands();
     }
 
     @Override
@@ -68,5 +71,13 @@ public class HighlandsCore extends JavaPlugin {
         } catch (SQLException e) {
             advancedLogger.Log(Level.SEVERE, "HighlandsCore", e.getMessage());
         }
+    }
+
+    public void reloadPluginConfig() {
+        this.reloadConfig();
+    }
+
+    private void registerCommands() {
+        this.getCommand("hlc").setExecutor(new HighlandsCommandHandler());
     }
 }

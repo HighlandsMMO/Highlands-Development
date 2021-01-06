@@ -14,11 +14,27 @@ group 'com.highlands.plugins'
 version '1.0-SNAPSHOT'
 
 dependencies {
-    compileOnly spigot('1.16.4')
+    compileOnly paper('1.16.4')
 }
 
 spigot {
     debug {
+        jvmArgs '-Xmx16G'
         buildVersion = "1.16.4"
+    }
+    commands {
+            'hlc' {
+                aliases = ['hlchelp']
+                description = 'HLC command'
+                permission = 'hlc.help'
+                permissionMessage = 'You do not have permission!'
+                usage = '/hlc'
+            }
+    }
+    permissions {
+        'hlc.help' {
+            description = 'Allows hlc command'
+            defaults = 'op'
+        }
     }
 }
