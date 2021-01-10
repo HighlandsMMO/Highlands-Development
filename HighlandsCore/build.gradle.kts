@@ -11,10 +11,20 @@ repositories {
 }
 
 dependencies {
+    //Kotlin
     implementation("org.jetbrains.kotlin:kotlin-stdlib")
-
     implementation(kotlin("stdlib"))
 
+    //Exposed
+    implementation("org.jetbrains.exposed:exposed-core:${project.properties["exposed_version"]}")
+    implementation("org.jetbrains.exposed:exposed-dao:${project.properties["exposed_version"]}")
+    implementation("org.jetbrains.exposed:exposed-jdbc:${project.properties["exposed_version"]}")
+
+    //MySQL and SQLite Drivers
+    implementation("mysql:mysql-connector-java:5.1.48")
+    implementation("org.xerial:sqlite-jdbc:3.30.1")
+
+    //Paper
     compileOnly(paper("1.16.4"))
 }
 
@@ -49,7 +59,7 @@ spigot {
 tasks.withType<Jar> {
     // Otherwise you'll get a "No main manifest attribute" error
     manifest {
-        attributes["Main-Class"] = "com.highlands.highlandscore.HighlandsCore"
+        attributes["Main-Class"] = "com.highlands.highlandscore.core.HighlandsCore"
     }
 
     // To add all of the dependencies

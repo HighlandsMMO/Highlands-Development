@@ -1,6 +1,6 @@
-package com.highlands.highlandscore.utilities
+package com.highlands.highlandscore.core.utilities
 
-import com.highlands.highlandscore.HighlandsCore
+import com.highlands.highlandscore.core.HighlandsCore
 import org.bukkit.Bukkit
 import java.io.File
 import java.io.FileWriter

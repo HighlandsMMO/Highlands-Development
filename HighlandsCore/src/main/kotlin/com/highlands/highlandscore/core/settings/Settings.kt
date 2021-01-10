@@ -1,6 +1,6 @@
-package com.highlands.highlandscore.settings
+package com.highlands.highlandscore.core.settings
 
-import com.highlands.highlandscore.HighlandsCore
+import com.highlands.highlandscore.core.HighlandsCore
 
 
 class Settings(highlandsCore: HighlandsCore) {

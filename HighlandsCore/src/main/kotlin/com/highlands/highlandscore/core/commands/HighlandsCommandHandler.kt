@@ -1,4 +1,4 @@
-package com.highlands.highlandscore.commands
+package com.highlands.highlandscore.core.commands
 
 import org.bukkit.command.Command
 import org.bukkit.command.CommandExecutor

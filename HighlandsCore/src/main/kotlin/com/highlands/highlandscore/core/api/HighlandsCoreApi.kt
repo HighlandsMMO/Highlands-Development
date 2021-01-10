@@ -1,6 +1,6 @@
-package com.highlands.highlandscore.api
+package com.highlands.highlandscore.core.api
 
-import com.highlands.highlandscore.HighlandsCore
+import com.highlands.highlandscore.core.HighlandsCore
 import org.bukkit.plugin.ServicePriority
 
 class HighlandsCoreApi(highlandsCore: HighlandsCore) {
