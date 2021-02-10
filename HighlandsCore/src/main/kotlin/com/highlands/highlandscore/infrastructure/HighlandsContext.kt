@@ -14,8 +14,8 @@ class HighlandsContext(var highlandsCore: HighlandsCore) {
     private var sqliteFile = File("plugins/HighlandsCore/HighlandsCore.db")
 
     init {
-        var settings = highlandsCore.settings
-        database = if (settings?.useMysql!!) Database.connect("jdbc:mysql://${settings?.mysqlHost}:${settings?.mysqlPort}/${settings?.mysqlDatabase}", "com.mysql.jdbc.Driver", settings?.mysqlUsername!!, settings?.mysqlPassword!!)
+        var settings = highlandsCore.settings!!
+        database = if (settings?.useMysql!!) Database.connect("jdbc:mysql://${settings.mysqlHost}:${settings.mysqlPort}/${settings.mysqlDatabase}", "com.mysql.jdbc.Driver", settings.mysqlUsername!!, settings.mysqlPassword!!)
         else Database.connect("jdbc:sqlite:${sqliteFile.absolutePath}", "org.sqlite.JDBC")
 
         setupTables()
